@@ -46,6 +46,24 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  --font-landing-display: var(--font-bricolage);
+  --font-landing-mono: var(--font-jetbrains-mono);
+
+  --color-landing-bg: var(--landing-bg);
+  --color-landing-bg-alt: var(--landing-bg-alt);
+  --color-landing-surface: var(--landing-surface);
+  --color-landing-surface-2: var(--landing-surface-2);
+  --color-landing-surface-3: var(--landing-surface-3);
+  --color-landing-border: var(--landing-border);
+  --color-landing-border-strong: var(--landing-border-strong);
+  --color-landing-divider: var(--landing-divider);
+  --color-landing-text: var(--landing-text);
+  --color-landing-text-muted: var(--landing-text-muted);
+  --color-landing-text-disabled: var(--landing-text-disabled);
+  --color-landing-accent: var(--landing-accent);
+  --color-landing-accent-ink: var(--landing-accent-ink);
+  --color-landing-success: var(--landing-success);
 }
 
 :root {
@@ -81,6 +99,22 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Landing (light) */
+  --landing-bg: #faf9f5;
+  --landing-bg-alt: #f2f0ea;
+  --landing-surface: #ffffff;
+  --landing-surface-2: #f5f4ef;
+  --landing-surface-3: #eeece4;
+  --landing-border: #e4e1da;
+  --landing-border-strong: #cfcbc0;
+  --landing-divider: #e8e5dd;
+  --landing-text: #141413;
+  --landing-text-muted: #5e5b55;
+  --landing-text-disabled: #a19d94;
+  --landing-accent: #e8b04a;
+  --landing-accent-ink: #1a1206;
+  --landing-success: #3f7d5a;
 }
 
 .dark {
@@ -115,6 +149,22 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  /* Landing (dark) */
+  --landing-bg: #0b0b0c;
+  --landing-bg-alt: #111113;
+  --landing-surface: #141416;
+  --landing-surface-2: #18181b;
+  --landing-surface-3: #1c1c1f;
+  --landing-border: #26262a;
+  --landing-border-strong: #3a3a3f;
+  --landing-divider: #1f1f22;
+  --landing-text: #f4f2ee;
+  --landing-text-muted: #a8a49c;
+  --landing-text-disabled: #77746e;
+  --landing-accent: #e8b04a;
+  --landing-accent-ink: #1a1206;
+  --landing-success: #8cc4a2;
 }
 
 @layer base {
