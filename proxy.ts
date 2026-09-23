@@ -5,7 +5,7 @@ export async function proxy(request: NextRequest) {
   const { response, user } = await updateSession(request)
   const { pathname } = request.nextUrl
 
-  const isAlunoRoute = ['/', '/categoria', '/aula', '/busca', '/assinatura'].some(
+  const isAlunoRoute = ['/inicio', '/categoria', '/aula', '/busca', '/assinatura'].some(
     (p) => pathname === p || pathname.startsWith(`${p}/`)
   )
   const isAdminRoute = pathname.startsWith('/admin')

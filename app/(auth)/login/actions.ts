@@ -14,5 +14,5 @@ export async function login(formData: FormData) {
     redirect(`/login?erro=${encodeURIComponent(error.message)}`)
   }
 
-  redirect('/')
+  redirect('/inicio')
 }

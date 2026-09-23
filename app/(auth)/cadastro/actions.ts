@@ -19,5 +19,5 @@ export async function cadastrar(formData: FormData) {
     redirect(`/cadastro?erro=${encodeURIComponent(error.message)}`)
   }
 
-  redirect('/')
+  redirect('/inicio')
 }

@@ -18,13 +18,13 @@ export default async function AdminLayout({ children }: { children: React.ReactN
 
   // Camada 2 de protecao (a 1a e' o proxy.ts, a 3a e' RLS via is_admin()).
   if (!usuario) redirect('/login')
-  if (usuario.papel !== 'admin') redirect('/')
+  if (usuario.papel !== 'admin') redirect('/inicio')
 
   return (
     <div className="flex min-h-screen flex-col lg:flex-row">
       <aside className="flex shrink-0 flex-col border-b border-border p-4 lg:w-56 lg:border-b-0 lg:border-r">
         <div className="mb-6 flex items-center justify-between">
-          <Link href="/" className="text-sm font-semibold tracking-tight">
+          <Link href="/inicio" className="text-sm font-semibold tracking-tight">
             Members Club
           </Link>
           <ThemeToggle />
@@ -41,7 +41,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
           ))}
         </nav>
         <div className="mt-6 flex flex-col gap-1">
-          <Button render={<Link href="/">Voltar ao site</Link>} nativeButton={false} variant="ghost" size="sm" className="justify-start" />
+          <Button render={<Link href="/inicio">Voltar ao site</Link>} nativeButton={false} variant="ghost" size="sm" className="justify-start" />
           <form action={logout}>
             <Button variant="ghost" size="sm" type="submit" className="w-full justify-start">
               Sair

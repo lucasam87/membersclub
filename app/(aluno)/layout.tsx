@@ -12,7 +12,7 @@ export default async function AlunoLayout({ children }: { children: React.ReactN
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-40 flex items-center justify-between border-b border-border/60 bg-background/80 px-6 py-4 backdrop-blur-md">
-        <Link href="/" className="font-semibold tracking-tight">
+        <Link href="/inicio" className="font-semibold tracking-tight">
           Members Club
         </Link>
         <div className="flex items-center gap-2">
