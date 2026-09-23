@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /inicio
+Disallow: /categoria
+Disallow: /aula
+Disallow: /busca
+Disallow: /assinatura
+Disallow: /admin
