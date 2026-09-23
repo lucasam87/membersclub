@@ -4,7 +4,7 @@ export function InsideLesson() {
   return (
     <section className="px-5 py-16 lg:px-20 lg:py-24">
       <div className="mx-auto max-w-[1440px] text-center">
-        <p className="font-[var(--font-landing-mono)] text-xs font-medium tracking-[0.08em] text-landing-accent uppercase lg:text-[13px]">
+        <p className="font-[var(--font-landing-mono)] text-xs font-medium tracking-[0.08em] text-landing-accent-text uppercase lg:text-[13px]">
           Por dentro da aula
         </p>
         <h2 className="mx-auto mt-3 max-w-2xl font-[var(--font-landing-display)] text-[32px] leading-[1.1] font-bold tracking-[-0.03em] text-landing-text lg:text-[52px] lg:leading-[1.05]">

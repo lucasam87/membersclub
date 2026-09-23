@@ -62,6 +62,7 @@
   --color-landing-text-muted: var(--landing-text-muted);
   --color-landing-text-disabled: var(--landing-text-disabled);
   --color-landing-accent: var(--landing-accent);
+  --color-landing-accent-text: var(--landing-accent-text);
   --color-landing-accent-ink: var(--landing-accent-ink);
   --color-landing-success: var(--landing-success);
 }
@@ -113,6 +114,9 @@
   --landing-text-muted: #5e5b55;
   --landing-text-disabled: #a19d94;
   --landing-accent: #e8b04a;
+  /* Mesmo tom do accent, escurecido: #E8B04A como texto pequeno falha
+     4.5:1 em fundo claro (1.86:1). Usado so' para texto/eyebrows. */
+  --landing-accent-text: #8a5a12;
   --landing-accent-ink: #1a1206;
   --landing-success: #3f7d5a;
 }
@@ -163,6 +167,8 @@
   --landing-text-muted: #a8a49c;
   --landing-text-disabled: #77746e;
   --landing-accent: #e8b04a;
+  /* No escuro o gold ja' passa 4.5:1 em texto pequeno; mantem igual. */
+  --landing-accent-text: #e8b04a;
   --landing-accent-ink: #1a1206;
   --landing-success: #8cc4a2;
 }

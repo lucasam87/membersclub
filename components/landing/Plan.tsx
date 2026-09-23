@@ -6,7 +6,7 @@ export function Plan() {
     <section id="planos" className="scroll-mt-20 bg-landing-bg-alt px-5 py-16 lg:px-20 lg:py-24">
       <div className="mx-auto grid max-w-[1440px] items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div>
-          <p className="font-[var(--font-landing-mono)] text-xs font-medium tracking-[0.08em] text-landing-accent uppercase lg:text-[13px]">
+          <p className="font-[var(--font-landing-mono)] text-xs font-medium tracking-[0.08em] text-landing-accent-text uppercase lg:text-[13px]">
             Assinatura
           </p>
           <h2 className="mt-3 font-[var(--font-landing-display)] text-[32px] leading-[1.1] font-bold tracking-[-0.03em] text-landing-text lg:text-[52px] lg:leading-[1.05]">
@@ -21,7 +21,7 @@ export function Plan() {
         <div className="rounded-3xl border border-landing-accent bg-landing-surface p-8">
           <div className="flex items-center justify-between">
             <p className="text-lg font-semibold text-landing-text">Members Club</p>
-            <span className="rounded-full bg-landing-accent/15 px-3 py-1 text-xs font-medium text-landing-accent">
+            <span className="rounded-full bg-landing-accent/15 px-3 py-1 text-xs font-medium text-landing-accent-text">
               Acesso completo
             </span>
           </div>

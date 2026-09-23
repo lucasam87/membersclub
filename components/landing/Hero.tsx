@@ -9,7 +9,7 @@ export function Hero() {
     <section id="top" className="scroll-mt-20 px-5 pt-16 pb-16 lg:px-20 lg:pt-24 lg:pb-24">
       <div className="mx-auto grid max-w-[1440px] items-center gap-12 lg:grid-cols-[560px_1fr] lg:gap-16">
         <div>
-          <p className="font-[var(--font-landing-mono)] text-xs font-medium tracking-[0.08em] text-landing-accent uppercase lg:text-[13px]">
+          <p className="font-[var(--font-landing-mono)] text-xs font-medium tracking-[0.08em] text-landing-accent-text uppercase lg:text-[13px]">
             Clube de membros · Educação em TI
           </p>
           <h1 className="mt-4 font-[var(--font-landing-display)] text-[40px] leading-[1.05] font-bold tracking-[-0.03em] text-landing-text lg:text-[72px] lg:leading-[1.02]">
@@ -53,7 +53,7 @@ export function Hero() {
           </div>
 
           <div className="rounded-2xl bg-landing-surface-2 p-5">
-            <p className="font-[var(--font-landing-mono)] text-[11px] font-medium tracking-[0.08em] text-landing-accent uppercase">
+            <p className="font-[var(--font-landing-mono)] text-[11px] font-medium tracking-[0.08em] text-landing-accent-text uppercase">
               Em destaque
             </p>
             <p className="mt-1 text-lg font-semibold text-landing-text">{landingConfig.featuredTrack}</p>

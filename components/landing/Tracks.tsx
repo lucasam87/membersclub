@@ -5,7 +5,7 @@ export function Tracks({ trilhas }: { trilhas: TrilhaExibicao[] }) {
   return (
     <section id="trilhas" className="scroll-mt-20 px-5 py-16 lg:px-20 lg:py-24">
       <div className="mx-auto max-w-[1440px]">
-        <p className="font-[var(--font-landing-mono)] text-xs font-medium tracking-[0.08em] text-landing-accent uppercase lg:text-[13px]">
+        <p className="font-[var(--font-landing-mono)] text-xs font-medium tracking-[0.08em] text-landing-accent-text uppercase lg:text-[13px]">
           O catálogo
         </p>
         <h2 className="mt-3 max-w-2xl font-[var(--font-landing-display)] text-[32px] leading-[1.1] font-bold tracking-[-0.03em] text-landing-text lg:text-[52px] lg:leading-[1.05]">
@@ -31,9 +31,11 @@ export function Tracks({ trilhas }: { trilhas: TrilhaExibicao[] }) {
                 {trilha.glifo}
               </span>
               <div>
-                <p className="text-lg font-semibold text-landing-text">{trilha.nome}</p>
+                {/* Fundo do card e' um swatch fixo (nao muda com o tema), entao
+                    o texto tambem precisa ser uma cor clara fixa. */}
+                <p className="text-lg font-semibold text-[#F4F2EE]">{trilha.nome}</p>
                 {trilha.numeroAulas != null && trilha.numeroModulos != null && (
-                  <p className="mt-1 font-[var(--font-landing-mono)] text-sm text-landing-text-muted">
+                  <p className="mt-1 font-[var(--font-landing-mono)] text-sm text-[#C9C6C0]">
                     {trilha.numeroAulas} aulas · {trilha.numeroModulos} módulos
                   </p>
                 )}
