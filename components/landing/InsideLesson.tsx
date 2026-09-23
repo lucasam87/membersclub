@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import { landingConfig } from '@/lib/landing/config'
 import { IconCheck, IconLock, IconPlay } from './icons'
 
 export function InsideLesson() {
@@ -15,6 +17,18 @@ export function InsideLesson() {
         </p>
 
         {/* Mockup de desktop */}
+        {landingConfig.insideLessonImageUrl ? (
+          <div className="relative mx-auto mt-10 hidden aspect-[1280/560] max-w-[1280px] overflow-hidden rounded-[20px] border border-landing-border lg:block">
+            <Image
+              src={landingConfig.insideLessonImageUrl}
+              alt="Tela da aula, com a navegação da trilha, o vídeo e o quiz"
+              fill
+              loading="lazy"
+              sizes="(min-width: 1024px) 1280px, 100vw"
+              className="object-cover"
+            />
+          </div>
+        ) : (
         <div
           className="mx-auto mt-10 hidden max-w-[1280px] gap-4 rounded-[20px] border border-landing-border bg-landing-surface p-5 text-left lg:grid lg:h-[560px] lg:grid-cols-[240px_1fr_280px]"
           aria-hidden="true"
@@ -85,8 +99,21 @@ export function InsideLesson() {
             </div>
           </div>
         </div>
+        )}
 
         {/* Empilhado no mobile/tablet */}
+        {landingConfig.insideLessonMobileImageUrl ? (
+          <div className="relative mx-auto mt-10 aspect-[390/700] max-w-xl overflow-hidden rounded-[20px] border border-landing-border lg:hidden">
+            <Image
+              src={landingConfig.insideLessonMobileImageUrl}
+              alt="Tela da aula no celular, com o vídeo, o quiz e os materiais"
+              fill
+              loading="lazy"
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
+        ) : (
         <div className="mx-auto mt-10 flex max-w-xl flex-col gap-4 rounded-[20px] border border-landing-border bg-landing-surface p-4 text-left lg:hidden">
           <div className="flex flex-col items-center justify-center rounded-xl bg-landing-surface-2 p-6">
             <span className="flex size-14 items-center justify-center rounded-full bg-landing-accent text-landing-accent-ink">
@@ -106,6 +133,7 @@ export function InsideLesson() {
             <p className="text-xs text-landing-text-muted">slides.pdf</p>
           </div>
         </div>
+        )}
       </div>
     </section>
   )

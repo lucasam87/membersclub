@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { landingConfig } from '@/lib/landing/config'
 import { IconCheck, IconLock, IconPlay } from './icons'
 
@@ -42,6 +43,18 @@ export function Hero() {
           </p>
         </div>
 
+        {landingConfig.heroImageUrl ? (
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[20px] border border-landing-border shadow-[0_40px_120px_rgba(0,0,0,.55)]">
+            <Image
+              src={landingConfig.heroImageUrl}
+              alt="Home da área de membros, com a trilha em destaque e as aulas em andamento"
+              fill
+              priority
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+        ) : (
         <div
           className="rounded-[20px] border border-landing-border bg-landing-surface p-4 shadow-[0_40px_120px_rgba(0,0,0,.55)] lg:p-5"
           aria-hidden="true"
@@ -102,6 +115,7 @@ export function Hero() {
             </div>
           </div>
         </div>
+        )}
       </div>
     </section>
   )

@@ -18,7 +18,7 @@ export const landingConfig = {
   accentAlt: ['#7FD1AE', '#8FA8FF', '#F07A5A'],
 
   // TODO: preencher com o preco real da assinatura antes de publicar.
-  price: '[SEU PREÇO]',
+  price: '49,99',
   pricePeriod: '/ mês',
   checkoutUrl: '/cadastro',
   loginUrl: '/login',
@@ -26,6 +26,13 @@ export const landingConfig = {
 
   // TODO: definir qual trilha aparece em destaque no mockup do hero.
   featuredTrack: '[Nome da trilha em destaque]',
+
+  // Prints reais (opcionais). Deixe null para manter o mockup desenhado em
+  // CSS. Para usar uma imagem, coloque o arquivo em `public/landing/` e
+  // aponte o caminho aqui (ex.: '/landing/hero-preview.png').
+  heroImageUrl: null as string | null,
+  insideLessonImageUrl: null as string | null,
+  insideLessonMobileImageUrl: null as string | null,
 
   tracks: [
     { nome: 'Programação', glifo: '</>', cor: '#1E2533', glifoCor: '#8FA8D6' },
